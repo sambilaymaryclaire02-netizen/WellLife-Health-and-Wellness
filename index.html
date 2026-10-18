@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f3f7f1">
+    <meta name="description" content="Simple, practical health and wellness tips and habit trackers for students.">
+    <title>WellLife | Health and Wellness Guide</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+        <a class="brand" href="#home" aria-label="WellLife home">
+            <span class="brand-mark" aria-hidden="true">+</span>
+            <span>Well<span class="brand-light">Life</span></span>
+        </a>
+        <nav aria-label="Main navigation">
+            <a href="#tips">Wellness tips</a>
+            <a href="#checklist">Daily checklist</a>
+            <a href="#water">Water tracker</a>
+        </nav>
+    </header>
+
+    <main id="main">
+        <section class="hero" id="home" aria-labelledby="hero-title">
+            <div class="hero-content">
+                <p class="eyebrow">A guide to feeling your best</p>
+                <h1 id="hero-title">Small habits.<br><span>Healthier days.</span></h1>
+                <p class="hero-intro">
+                    Student life can be busy. Find simple ways to care for your
+                    body and mind, one manageable step at a time.
+                </p>
+                <a class="button" href="#tips">Explore wellness tips <span aria-hidden="true">↓</span></a>
+            </div>
+            <div class="hero-art" aria-hidden="true">
+                <span class="art-sun"></span>
+                <span class="art-leaf art-leaf-one"></span>
+                <span class="art-leaf art-leaf-two"></span>
+                <span class="art-stem"></span>
+            </div>
+        </section>
+
+        <section class="section tips-section" id="tips" aria-labelledby="tips-title">
+            <div class="section-heading">
+                <p class="eyebrow">Everyday wellness</p>
+                <h2 id="tips-title">Simple tips for student life</h2>
+                <p>Healthy routines don't need to be complicated. Start with what feels doable.</p>
+            </div>
+
+            <div class="tip-grid">
+                <article class="tip-card">
+                    <span class="tip-icon" aria-hidden="true">↗</span>
+                    <h3>Move a little</h3>
+                    <p>Stretch between classes or take a short walk to refresh after studying.</p>
+                </article>
+                <article class="tip-card">
+                    <span class="tip-icon" aria-hidden="true">♡</span>
+                    <h3>Pause and reset</h3>
+                    <p>Step away from your screen for a moment and take a few calm breaths.</p>
+                </article>
+                <article class="tip-card">
+                    <span class="tip-icon" aria-hidden="true">◒</span>
+                    <h3>Fuel your day</h3>
+                    <p>Make time for regular meals and keep water nearby during the day.</p>
+                </article>
+                <article class="tip-card">
+                    <span class="tip-icon" aria-hidden="true">☾</span>
+                    <h3>Make room for rest</h3>
+                    <p>A consistent, relaxing bedtime routine can help you wind down.</p>
+                </article>
+            </div>
+
+            <aside class="tip-of-day" aria-labelledby="tip-of-day-title">
+                <div class="tip-of-day-icon" aria-hidden="true">✳</div>
+                <div class="tip-of-day-copy">
+                    <p class="eyebrow">A small idea to try</p>
+                    <h3 id="tip-of-day-title">Take a screen break</h3>
+                    <p id="daily-tip" aria-live="polite">Look away from your screen and stretch for a minute between study sessions.</p>
+                </div>
+                <button class="button button-outline" id="next-tip" type="button">
+                    Show another tip <span aria-hidden="true">→</span>
+                </button>
+            </aside>
+        </section>
+
+        <section class="section checklist-section" id="checklist" aria-labelledby="checklist-title">
+    <div class="checklist-layout">
+        <div class="section-heading checklist-heading">
+            <p class="eyebrow">One day at a time</p>
+            <h2 id="checklist-title">My daily wellness checklist</h2>
+            <p>Check off habits as you go. Every small step counts.</p>
+        </div>
+
+        <div class="progress-panel">
+            <div class="progress-labels">
+                <span class="progress-title">TODAY'S PROGRESS</span>
+                <span id="progress-label" aria-live="polite">0 of 8 complete</span>
+            </div>
+            <progress id="checklist-progress" max="8" value="0"
+                aria-label="Daily wellness checklist progress">0 of 8</progress>
+        </div>
+    </div>
+
+    <div class="checklist-grid">
+        <!-- Original 5 items -->
+        <label class="check-item">
+            <input type="checkbox" data-habit>
+            <span class="custom-check" aria-hidden="true"></span>
+            <span class="check-copy">
+                <strong>Drink water regularly</strong>
+                <span>Keep water nearby as you study.</span>
+            </span>
+        </label>
+
+        <label class="check-item">
+            <input type="checkbox" data-habit>
+            <span class="custom-check" aria-hidden="true"></span>
+            <span class="check-copy">
+                <strong>Eat a nourishing meal</strong>
+                <span>Take a break to enjoy a balanced meal.</span>
+            </span>
+        </label>
+
+        <label class="check-item">
+            <input type="checkbox" data-habit>
+            <span class="custom-check" aria-hidden="true"></span>
+            <span class="check-copy">
+                <strong>Move your body</strong>
+                <span>Stretch, walk, or do an activity you like.</span>
+            </span>
+        </label>
+
+        <label class="check-item">
+            <input type="checkbox" data-habit>
+            <span class="custom-check" aria-hidden="true"></span>
+            <span class="check-copy">
+                <strong>Take a mindful break</strong>
+                <span>Pause and give yourself a few quiet minutes.</span>
+            </span>
+        </label>
+
+        <!-- 4 additional items from Task 4 -->
+        <label class="check-item">
+            <input type="checkbox" data-habit>
+            <span class="custom-check" aria-hidden="true"></span>
+            <span class="check-copy">
+                <strong>Take a study stretch</strong>
+                <span>Stretch your arms and legs between study sessions.</span>
+            </span>
+        </label>
+
+        <label class="check-item">
+            <input type="checkbox" data-habit>
+            <span class="custom-check" aria-hidden="true"></span>
+            <span class="check-copy">
+                <strong>Eat a balanced snack</strong>
+                <span>Choose a snack with a mix of nourishing foods.</span>
+            </span>
+        </label>
+
+        <label class="check-item">
+            <input type="checkbox" data-habit>
+            <span class="custom-check" aria-hidden="true"></span>
+            <span class="check-copy">
+                <strong>Set a bedtime routine</strong>
+                <span>Make time for a calming activity before bed.</span>
+            </span>
+        </label>
+
+        <label class="check-item">
+            <input type="checkbox" data-habit>
+            <span class="custom-check" aria-hidden="true"></span>
+            <span class="check-copy">
+                <strong>Write down one good thing</strong>
+                <span>Take a moment to note something that went well today.</span>
+            </span>
+        </label>
+    </div>
+
+    <p class="privacy-note">
+        Your checklist stays in this page and resets when you reload it.
+    </p>
+</section>
+        <section class="water-section" id="water" aria-labelledby="water-title">
+            <div class="water-layout">
+                <div class="water-copy">
+                    <p class="eyebrow">A friendly reminder</p>
+                    <h2 id="water-title">Keep water close by.</h2>
+                    <p>Use this simple counter to keep track of the glasses you've had today. Everyone's needs can be different.</p>
+                </div>
+                <div class="water-panel">
+                    <p class="water-panel-label">GLASSES OF WATER</p>
+                    <div class="water-count-line" aria-live="polite" aria-atomic="true">
+                        <span id="water-count">0</span>
+                        <span id="water-unit">glasses</span>
+                    </div>
+                    <div class="water-controls">
+                        <button class="button button-outline water-minus" id="water-minus" type="button" aria-label="Remove one glass of water">−</button>
+                        <button class="button" id="water-plus" type="button">+ Add a glass</button>
+                    </div>
+                    <p class="privacy-note">A personal tracker, not a health recommendation.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <a class="brand footer-brand" href="#home"><span class="brand-mark" aria-hidden="true">+</span> Well<span class="brand-light">Life</span></a>
+        <p>Take care of yourself, one small step at a time.</p>
+        <a class="back-top" href="#home">Back to top ↑</a>
+    </footer>
+</body>
+</html>
